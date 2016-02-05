@@ -1,0 +1,46 @@
+.ft-page {
+  background: #323232;
+  padding: 25px 0 20px;
+
+  p {
+    color: #969696;
+    font-size: 0.9em;
+    font-weight: 300;
+  }
+}
+
+.footer-ending {
+  color: #ffffff;
+
+  .social {
+    padding: 20px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .ft-page {
+    padding: 50px 0 40px;
+  }
+
+  .ft-begining {
+    padding-bottom: 35px;
+  }
+
+  .footer-ending {
+    color: #ffffff;
+
+    .social {
+      padding: 0;
+    }
+
+    >ul {
+      padding: 0;
+
+      >li {
+        float: left;
+        width: 33.3%;
+      }
+    }
+  }
+}

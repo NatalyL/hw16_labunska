@@ -1,0 +1,68 @@
+.contact {
+  background: url("../images/bg_section.png") center no-repeat;
+  background-size: cover;
+  padding: 45px 0;
+  color: #ffffff;
+
+  .more {
+    color: #ffffff;
+    font-size: 0.9em;
+
+    &:after {
+      right: -15px;
+      @include arrow-right (4px, #fff);
+    }
+
+    &:hover {
+      color: #176aa4;
+    }
+    &:hover:after {
+      border-left: 4px solid #4c93c3;
+    }
+  }
+
+  form {
+    padding: 15px 0 25px;
+
+    li {
+      padding: 5px 5px 5px 0;
+
+      input {
+        width: 100%;
+        padding: 15px 15px;
+        color: #afafaf;
+        font-size: 1.3em;
+        border: none;
+        border-radius: 5px;
+
+        &:focus {
+          outline: 0;
+        }
+      }
+
+      input[type=submit] {
+        background: #dfad00;
+        color: #ffffff;
+
+        &:hover {
+          transition: all 0.5s ease;
+          background: #ffffff;
+          color: #dfad00;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+
+    form {
+
+      li {
+        float: left;
+        width: 25%;
+      }
+    }
+  }
+}

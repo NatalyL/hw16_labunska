@@ -1,0 +1,50 @@
+.people {
+  padding: 20px 0 20px;
+  position: relative;
+  background: url("../images/quotes.png") center top no-repeat;
+  background-position-y: 41px;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 0.9em;
+    font-weight: 300;
+  }
+
+  .more {
+    font-style: normal;
+    font-size: 1em;
+
+    &:after {
+      margin-right: -25px;
+    }
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .social {
+    margin-top: 45px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .people {
+    padding: 90px 0 40px;
+    background-position-y: 90px;
+
+    h2 {
+      width: 50%;
+      margin-bottom: 100px;
+    }
+
+    img {
+      float: right;
+      padding-left: 50px;
+    }
+  }
+}

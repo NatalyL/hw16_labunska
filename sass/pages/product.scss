@@ -1,0 +1,142 @@
+.product {
+  padding: 70px 0 30px;
+
+  h1 {
+    margin-bottom: 40px;
+  }
+}
+
+.list {
+  padding-top: 30px;
+
+  h3 {
+    color: #323232;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 20px 0;
+  }
+
+  p {
+    color: #2f2f2f;
+    font-size: 0.9em;
+    font-weight: 300;
+  }
+
+  .more {
+    &:after {
+      top: 10px;
+      right: -15px;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 4px solid #4c93c3;
+    }
+    &:hover:after {
+      border-top: 4px solid #f4960f;
+    }
+  }
+}
+
+.info {
+
+  img {
+    float: left;
+    padding: 0 50px 10px 0;
+  }
+
+  dt {
+    float: left;
+    width: 100px;
+    font-weight: 300;
+  }
+  dd {
+    margin-left: 100px;
+    font-weight: 400;
+  }
+
+  .rating {
+    font-size: 1.5em;
+    margin-left: 10px;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+    display: inline-block;
+  }
+  .rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+  }
+  .rating > span:hover,
+  .rating > span:hover ~ span {
+    color: transparent;
+  }
+  .rating > span:hover:before,
+  .rating > span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+    left: 0;
+    color: gold;
+  }
+
+  .price {
+    padding: 20px 0 0 0;
+
+    span {
+      font-size: 2em;
+      font-weight: 900;
+
+      &:first-child {
+        color: #4c93c3;
+      }
+
+      &:last-child {
+        color: #e9e9e9;
+        text-decoration: line-through;
+        padding-left: 10px;
+      }
+    }
+
+    p {
+      padding-bottom: 20px;
+    }
+  }
+
+  .btn-main {
+    font-size: 1.2em;
+    padding: 10px 50px;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      margin-top: -4px;
+      right: 25px;
+      @include arrow-right(4px, #fff);
+    }
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .list {
+    padding-top: 30px;
+
+    > li {
+      float: left;
+      width: 50%;
+      padding-right: 15px;
+    }
+  }
+
+  .info {
+    .price {
+      padding: 40px 0 0 0;
+
+    }
+    p {
+      padding-bottom: 20px;
+    }
+  }
+}
