@@ -1,5 +1,5 @@
 <?php $config = include('config.php'); ?>
-<?php $page = 'index'; ?>
+<?php $page = 'text'; ?>
 <?php include('header.php'); ?>
 <section class="text">
     <div class="container">

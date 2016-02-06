@@ -154,5 +154,430 @@ return array(
             'title' => 'Шампунь ежедневного использования"',
             'price' => '280 грн.'
         ),
-    )
+    ),
+
+    'video' => array (
+        array (
+            'url' => 'https://www.youtube.com/embed/eU3aSj5wapg'
+        ),
+        array (
+            'url' => 'https://www.youtube.com/embed/X7BeZMXKDfw'
+        ),
+        array (
+            'url' => 'https://www.youtube.com/embed/eU3aSj5wapg'
+        ),
+        array (
+            'url' => 'https://www.youtube.com/embed/X7BeZMXKDfw'
+        )
+    ),
+
+    'newvideo' => array (
+        array (
+            'url' => '#',
+            'title' => 'Шампунь ежедневного пользования (16:54)'
+        ),
+        array (
+            'url' => '#',
+            'title' => 'ПРЕМЬЕРА! Ева Бушмина - Религия (05:14)'
+        ),
+        array (
+            'url' => '#',
+            'title' => 'Анжелика Варум - Я Всегда С Тобой (Official Video)'
+        )
+    ),
+
+    'popular' => array (
+        array (
+            'url' => '#',
+            'title' => 'Шампунь ежедневного пользования (16:54)'
+        ),
+        array (
+            'url' => '#',
+            'title' => 'ПРЕМЬЕРА! Ева Бушмина - Религия (05:14)'
+        ),
+        array (
+            'url' => '#',
+            'title' => 'Анжелика Варум - Я Всегда С Тобой (Official Video)'
+        )
+    ),
+
+    'partners' => array(
+        array(
+            'image_path' => 'images/partner_1.jpg',
+            'name' => 'Диорнева Татьяна',
+            'position' => 'Директор',
+            'city' => 'Мариуполь',
+            'social' => array(
+                array(
+                    'net' => 'vk',
+                    'url' => '#',
+                    'fontawes'=> 'fa fa-vk'
+                ),
+                array(
+                    'net' => 'ok',
+                    'url' => '#',
+                    'fontawes'=> 'fa fa-odnoklassniki'
+                ),
+                array(
+                    'net' => 'facebook',
+                    'url' => '#',
+                    'fontawes'=> 'fa fa-facebook'
+                ),
+                array(
+                    'net' => 'twitter',
+                    'url' => '#',
+                    'fontawes'=> 'fa fa-twitter'
+                ),
+            )
+        ),
+        array(
+            'image_path' => 'images/partner_2.jpg',
+            'name' => 'Проценко Мария',
+            'position' => 'Директор',
+            'city' => 'Донецк',
+            'social' => array(
+                array(
+                    'net' => 'vk',
+                    'url' => '#',
+                    'fontawes'=> 'fa fa-vk'
+                ),
+                array(
+                    'net' => 'ok',
+                    'url' => '#',
+                    'fontawes'=> 'fa fa-odnoklassniki'
+                ),
+                array(
+                    'net' => 'facebook',
+                    'url' => '#',
+                    'fontawes'=> 'fa fa-facebook'
+                ),
+                array(
+                    'net' => 'twitter',
+                    'url' => '#',
+                    'fontawes'=> 'fa fa-twitter'
+                ),
+            )
+        ),
+        array(
+            'image_path' => 'images/partner_2.jpg',
+            'name' => 'Проценко Мария',
+            'position' => 'Директор',
+            'city' => 'Донецк',
+            'social' => array(
+                array(
+                    'net' => 'vk',
+                    'url' => '#',
+                    'fontawes'=> 'fa fa-vk'
+                ),
+                array(
+                    'net' => 'ok',
+                    'url' => '#',
+                    'fontawes'=> 'fa fa-odnoklassniki'
+                ),
+                array(
+                    'net' => 'facebook',
+                    'url' => '#',
+                    'fontawes'=> 'fa fa-facebook'
+                ),
+                array(
+                    'net' => 'twitter',
+                    'url' => '#',
+                    'fontawes'=> 'fa fa-twitter'
+                ),
+            )
+        ),
+        array(
+            'image_path' => 'images/partner_2.jpg',
+            'name' => 'Проценко Мария',
+            'position' => 'Директор',
+            'city' => 'Донецк',
+            'social' => array(
+                array(
+                    'net' => 'vk',
+                    'url' => '#',
+                    'fontawes'=> 'fa fa-vk'
+                ),
+                array(
+                    'net' => 'ok',
+                    'url' => '#',
+                    'fontawes'=> 'fa fa-odnoklassniki'
+                ),
+                array(
+                    'net' => 'facebook',
+                    'url' => '#',
+                    'fontawes'=> 'fa fa-facebook'
+                ),
+                array(
+                    'net' => 'twitter',
+                    'url' => '#',
+                    'fontawes'=> 'fa fa-twitter'
+                ),
+            )
+        ),
+    ),
+
+    'menuside' => array (
+        array(
+            'title' => 'Соли и грязи',
+            'url' => '#',
+            'submenuside' => array(
+                array(
+                    'title' => 'Дезодоранта женский "Фиона"',
+                    'url' => 'product.php',
+                ),
+                array(
+                    'title' => 'Дезодоранта женский "Рут"',
+                    'url' => 'product.php',
+                ),
+                array(
+                    'title' => 'Дезодоранта женский "Киви"',
+                    'url' => 'product.php',
+                ),
+                array(
+                    'title' => 'Дезодоранта женский "Леди"',
+                    'url' => 'product.php',
+                ),
+                array(
+                    'title' => 'Мужской дезодорант "Лорд"',
+                    'url' => 'product.php',
+                ),
+                array(
+                    'title' => 'Женские духи "Леди"',
+                    'url' => 'product.php',
+                ),
+                array(
+                    'title' => 'Женские духи "Фиона"',
+                    'url' => 'product.php',
+                ),
+                array(
+                    'title' => 'Женские духи "Моне"',
+                    'url' => 'product.php',
+                ),
+                array(
+                    'title' => 'Женские духи "Киви"',
+                    'url' => 'product.php',
+                ),
+                array(
+                    'title' => 'Женские духи "Рут"',
+                    'url' => 'product.php',
+                ),
+                array(
+                    'title' => 'Губная помада',
+                    'url' => 'product.php',
+                ),
+            ),
+        ),
+        array(
+            'title' => 'Кремы и лосьены',
+            'url' => '#',
+            'submenuside' => array(),
+        ),
+        array(
+            'title' => 'Парфюмерия',
+            'url' => '#',
+            'submenuside' => array(),
+        ),
+        array(
+            'title' => 'Витамины и бады',
+            'url' => '#',
+            'submenuside' => array(),
+        ),
+        array(
+            'title' => 'Чаи',
+            'url' => '#',
+            'submenuside' => array(),
+        ),
+    ),
+
+    'product' => array (
+        array(
+           'url' => 'product.php',
+            'image_path' => 'images/product_item_big.jpg',
+            'title' => 'Доктор Нонна на НТВ в программе "Наши со Львом Новоженовым"',
+            'price' => '280 грн.',
+            'buy_url' => '#',
+        ),
+        array(
+            'url' => 'product.php',
+            'image_path' => 'images/product_item_big.jpg',
+            'title' => 'Доктор Нонна на НТВ в программе "Наши со Львом Новоженовым"',
+            'price' => '280 грн.',
+            'buy_url' => '#',
+        ),
+        array(
+            'url' => 'product.php',
+            'image_path' => 'images/product_item_big.jpg',
+            'title' => 'Доктор Нонна на НТВ в программе "Наши со Львом Новоженовым"',
+            'price' => '280 грн.',
+            'buy_url' => '#',
+        ),
+        array(
+            'url' => 'product.php',
+            'image_path' => 'images/product_item_big.jpg',
+            'title' => 'Доктор Нонна на НТВ в программе "Наши со Львом Новоженовым"',
+            'price' => '280 грн.',
+            'buy_url' => '#',
+        ),
+        array(
+            'url' => 'product.php',
+            'image_path' => 'images/product_item_big.jpg',
+            'title' => 'Доктор Нонна на НТВ в программе "Наши со Львом Новоженовым"',
+            'price' => '280 грн.',
+            'buy_url' => '#',
+        ),
+        array(
+            'url' => 'product.php',
+            'image_path' => 'images/product_item_big.jpg',
+            'title' => 'Доктор Нонна на НТВ в программе "Наши со Львом Новоженовым"',
+            'price' => '280 грн.',
+            'buy_url' => '#',
+        ),
+        array(
+            'url' => 'product.php',
+            'image_path' => 'images/product_item_big.jpg',
+            'title' => 'Доктор Нонна на НТВ в программе "Наши со Львом Новоженовым"',
+            'price' => '280 грн.',
+            'buy_url' => '#',
+        ),
+        array(
+            'url' => 'product.php',
+            'image_path' => 'images/product_item_big.jpg',
+            'title' => 'Доктор Нонна на НТВ в программе "Наши со Львом Новоженовым"',
+            'price' => '280 грн.',
+            'buy_url' => '#',
+        ),
+        array(
+            'url' => 'product.php',
+            'image_path' => 'images/product_item_big.jpg',
+            'title' => 'Доктор Нонна на НТВ в программе "Наши со Львом Новоженовым"',
+            'price' => '280 грн.',
+            'buy_url' => '#',
+        ),
+        array(
+            'url' => 'product.php',
+            'image_path' => 'images/product_item_big.jpg',
+            'title' => 'Доктор Нонна на НТВ в программе "Наши со Львом Новоженовым"',
+            'price' => '280 грн.',
+            'buy_url' => '#',
+        ),
+        array(
+            'url' => 'product.php',
+            'image_path' => 'images/product_item_big.jpg',
+            'title' => 'Доктор Нонна на НТВ в программе "Наши со Львом Новоженовым"',
+            'price' => '280 грн.',
+            'buy_url' => '#',
+        ),
+        array(
+            'url' => 'product.php',
+            'image_path' => 'images/product_item_big.jpg',
+            'title' => 'Доктор Нонна на НТВ в программе "Наши со Львом Новоженовым"',
+            'price' => '280 грн.',
+            'buy_url' => '#',
+        ),
+    ),
+
+    'like' => array(
+        array(
+            'url' => 'product.php',
+            'image_path' => 'images/view_item_1.png',
+            'title' => 'Шампунь ежедневного использования',
+            'price' => '280 грн.',
+        ),
+        array(
+            'url' => 'product.php',
+            'image_path' => 'images/view_item_1.png',
+            'title' => 'Шампунь ежедневного использования',
+            'price' => '280 грн.',
+        ),
+        array(
+            'url' => 'product.php',
+            'image_path' => 'images/view_item_1.png',
+            'title' => 'Шампунь ежедневного использования',
+            'price' => '280 грн.',
+        ),
+        array(
+            'url' => 'product.php',
+            'image_path' => 'images/view_item_1.png',
+            'title' => 'Шампунь ежедневного использования',
+            'price' => '280 грн.',
+        ),
+        array(
+            'url' => 'product.php',
+            'image_path' => 'images/view_item_1.png',
+            'title' => 'Шампунь ежедневного использования',
+            'price' => '280 грн.',
+        ),
+    ),
+
+    'view' => array(
+        array(
+            'url' => 'product.php',
+            'image_path' => 'images/view_item_1.png',
+            'title' => 'Шампунь ежедневного использования',
+            'price' => '280 грн.',
+        ),
+        array(
+            'url' => 'product.php',
+            'image_path' => 'images/view_item_1.png',
+            'title' => 'Шампунь ежедневного использования',
+            'price' => '280 грн.',
+        ),
+        array(
+            'url' => 'product.php',
+            'image_path' => 'images/view_item_1.png',
+            'title' => 'Шампунь ежедневного использования',
+            'price' => '280 грн.',
+        ),
+        array(
+            'url' => 'product.php',
+            'image_path' => 'images/view_item_1.png',
+            'title' => 'Шампунь ежедневного использования',
+            'price' => '280 грн.',
+        ),
+        array(
+            'url' => 'product.php',
+            'image_path' => 'images/view_item_1.png',
+            'title' => 'Шампунь ежедневного использования',
+            'price' => '280 грн.',
+        ),
+    ),
+
+    'ingredients' => array(
+        array(
+            'title' => 'Основные ингредиенты',
+            'info' => 'Доктор Нонна на телеканале домашний в программе спросите повара
+                            на телеканале домашний в программе спросите повара Доктор Нонна на
+                            телеканале домашний в программе Доктор Нонна на телеканале домашний
+                            в программе. Доктор Нонна на телеканале домашний в программе спросите
+                            повара Доктор Нонна на телеканале домашний в программе спросите...',
+            'url' => '#',
+        ),
+        array(
+            'title' => 'Основные ингредиенты',
+            'info' => 'Доктор Нонна на телеканале домашний в программе спросите повара
+                            на телеканале домашний в программе спросите повара Доктор Нонна на
+                            телеканале домашний в программе Доктор Нонна на телеканале домашний
+                            в программе. Доктор Нонна на телеканале домашний в программе спросите
+                            повара Доктор Нонна на телеканале домашний в программе спросите...',
+            'url' => '#',
+        ),
+        array(
+            'title' => 'Основные ингредиенты',
+            'info' => 'Доктор Нонна на телеканале домашний в программе спросите повара
+                            на телеканале домашний в программе спросите повара Доктор Нонна на
+                            телеканале домашний в программе Доктор Нонна на телеканале домашний
+                            в программе. Доктор Нонна на телеканале домашний в программе спросите
+                            повара Доктор Нонна на телеканале домашний в программе спросите...',
+            'url' => '#',
+        ),
+        array(
+            'title' => 'Основные ингредиенты',
+            'info' => 'Доктор Нонна на телеканале домашний в программе спросите повара
+                            на телеканале домашний в программе спросите повара Доктор Нонна на
+                            телеканале домашний в программе Доктор Нонна на телеканале домашний
+                            в программе. Доктор Нонна на телеканале домашний в программе спросите
+                            повара Доктор Нонна на телеканале домашний в программе спросите...',
+            'url' => '#',
+        ),
+    ),
 );

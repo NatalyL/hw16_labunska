@@ -83,22 +83,12 @@
                     </li>
                     <li>
                         <ul class="video-items-small clearfix">
+                            <?php foreach ($config['video'] as $videoItem): ?>
                             <li>
-                                <iframe width="100%" height="175" src="https://www.youtube.com/embed/eU3aSj5wapg"
+                                <iframe width="100%" height="175" src="<?php echo $videoItem['url']; ?>"
                                         frameborder="0" allowfullscreen></iframe>
                             </li>
-                            <li>
-                                <iframe width="100%" height="175" src="https://www.youtube.com/embed/X7BeZMXKDfw"
-                                        frameborder="0" allowfullscreen></iframe>
-                            </li>
-                            <li>
-                                <iframe width="100%" height="175" src="https://www.youtube.com/embed/X7BeZMXKDfw"
-                                        frameborder="0" allowfullscreen></iframe>
-                            </li>
-                            <li>
-                                <iframe width="100%" height="175" src="https://www.youtube.com/embed/X7BeZMXKDfw"
-                                        frameborder="0" allowfullscreen></iframe>
-                            </li>
+                            <?php endforeach; ?>
                         </ul>
                     </li>
                 </ul>
@@ -108,17 +98,21 @@
             <div class="col-xs-12 col-sm-6">
                 <h3>Новые видео</h3>
                 <ul>
-                    <li><a href="#">Шампунь ежедневного пользования (16:54)</a></li>
-                    <li><a href="#">ПРЕМЬЕРА! Ева Бушмина - Религия (05:14)</a></li>
-                    <li><a href="#">Анжелика Варум - Я Всегда С Тобой (Official Video)</a></li>
+                    <?php foreach ($config['newvideo'] as $newvideoItem): ?>
+                    <li>
+                        <a href="<?php echo $newvideoItem['url']; ?>"><?php echo htmlspecialchars($newvideoItem['title']); ?></a>
+                    </li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
             <div class="col-xs-12 col-sm-6">
                 <h3>Популярные</h3>
                 <ul>
-                    <li><a href="#">Шампунь ежедневного пользования (16:54)</a></li>
-                    <li><a href="#">ПРЕМЬЕРА! Ева Бушмина - Религия (05:14)</a></li>
-                    <li><a href="#">Анжелика Варум - Я Всегда С Тобой (Official Video)</a></li>
+                    <?php foreach ($config['popular'] as $popularItem): ?>
+                        <li>
+                            <a href="<?php echo $popularItem['url']; ?>"><?php echo htmlspecialchars($popularItem['title']); ?></a>
+                        </li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
         </div>
@@ -141,7 +135,7 @@
                     амбициозных
                     людей, которые хотят изменить свою жизнь. 27 декабря 2007 года уволился из МВД и теперь сотрудничаю
                     ...</p>
-                <a href="text.html" class="more">Узнать подоробнее</a>
+                <a href="text.php" class="more">Узнать подоробнее</a>
                 <ul class="social clearfix">
                     <li class="youtube"><a href="#"><span class="fa fa-youtube"></span></a></li>
                     <li class="vk"><a href="#"><span class="fa fa-vk"></span></a></li>
@@ -159,62 +153,25 @@
             <div class="col-xs-12">
                 <h2 class="title">Мои партнеры по бизнесу</h2>
                 <ul class="partners">
+                    <?php foreach ($config['partners'] as $partnersItem): ?>
                     <li>
-                        <img src="images/partner_1.jpg" alt="">
+                        <img src="<?php echo $partnersItem['image_path']; ?>" alt="">
 
-                        <h3>Диорнева Татьяна</h3>
+                        <h3><?php echo htmlspecialchars($partnersItem['name']); ?></h3>
 
-                        <div>Директор</div>
-                        <div class="town">Мариуполь</div>
+                        <div><?php echo htmlspecialchars($partnersItem['position']); ?></div>
+                        <div class="town"><?php echo htmlspecialchars($partnersItem['city']); ?></div>
                         <ul class="social clearfix">
-                            <li class="vk"><a href="#"><span class="fa fa-vk"></span></a></li>
-                            <li class="ok"><a href="#"><span class="fa fa-odnoklassniki"></span></a></li>
-                            <li class="facebook"><a href="#"><span class="fa fa-facebook"></span></a></li>
-                            <li class="facebook"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                        <?php foreach ($partnersItem['social'] as $socialItem): ?>
+                            <li class="<?php echo $socialItem['net']; ?>">
+                                <a href="<?php echo $socialItem['url']; ?>">
+                                    <span class="<?php echo $socialItem['fontawes']; ?>"></span>
+                                </a>
+                            </li>
+                        <?php endforeach; ?>
                         </ul>
                     </li>
-                    <li>
-                        <img src="images/partner_2.jpg" alt="">
-
-                        <h3>Проценко Мария</h3>
-
-                        <div>Директор</div>
-                        <div class="town">Донецк</div>
-                        <ul class="social clearfix">
-                            <li class="vk"><a href="#"><span class="fa fa-vk"></span></a></li>
-                            <li class="ok"><a href="#"><span class="fa fa-odnoklassniki"></span></a></li>
-                            <li class="facebook"><a href="#"><span class="fa fa-facebook"></span></a></li>
-                            <li class="facebook"><a href="#"><span class="fa fa-twitter"></span></a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <img src="images/partner_2.jpg" alt="">
-
-                        <h3>Проценко Мария</h3>
-
-                        <div>Директор</div>
-                        <div class="town">Донецк</div>
-                        <ul class="social clearfix">
-                            <li class="vk"><a href="#"><span class="fa fa-vk"></span></a></li>
-                            <li class="ok"><a href="#"><span class="fa fa-odnoklassniki"></span></a></li>
-                            <li class="facebook"><a href="#"><span class="fa fa-facebook"></span></a></li>
-                            <li class="facebook"><a href="#"><span class="fa fa-twitter"></span></a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <img src="images/partner_2.jpg" alt="">
-
-                        <h3>Проценко Мария</h3>
-
-                        <div>Директор</div>
-                        <div class="town">Донецк</div>
-                        <ul class="social clearfix">
-                            <li class="vk"><a href="#"><span class="fa fa-vk"></span></a></li>
-                            <li class="ok"><a href="#"><span class="fa fa-odnoklassniki"></span></a></li>
-                            <li class="facebook"><a href="#"><span class="fa fa-facebook"></span></a></li>
-                            <li class="facebook"><a href="#"><span class="fa fa-twitter"></span></a></li>
-                        </ul>
-                    </li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
         </div>

@@ -1,5 +1,5 @@
 <?php $config = include('config.php'); ?>
-<?php $page = 'index'; ?>
+<?php $page = 'catalog'; ?>
 <?php include('header.php'); ?>
 <section class="catalog">
     <div class="container">
@@ -18,29 +18,22 @@
                     </div>
                     <div class="collapse navbar-collapse" id="collapse2">
                         <ul class="nav navbar-nav">
-                            <li data-toggle="collapse" data-target="#toggleSample"><a href="#">Соли и грязи</a>
-
+                            <?php foreach ($config['menuside'] as $menusideItem): ?>
+                            <li data-toggle="collapse" data-target="#toggleSample">
+                                <a href="<?php echo $menusideItem['url'];?>"><?php echo htmlspecialchars($menusideItem['title']);?></a>
                                 <div id="toggleSample" class="collapse in">
+                                    <?php if (!empty($menusideItem['submenuside'])):?>
                                     <ul class="sub-menu-side">
-                                        <li><a href="product.php">Дезодоранта женский "Фиона"</a></li>
-                                        <li><a href="product.php">Дезодоранта женский "Рут"</a></li>
-                                        <li><a href="product.php">Дезодоранта женский "Киви"</a></li>
-                                        <li><a href="product.php">Дезодоранта женский "Леди"</a></li>
-                                        <li><a href="product.php">Мужской дезодорант "Лорд"</a></li>
-                                        <li><a href="product.php">Женские духи "Леди"</a></li>
-                                        <li><a href="product.php">Женские духи "Фиона"</a></li>
-                                        <li><a href="product.php">Женские духи "Моне"</a></li>
-                                        <li><a href="product.php">Женские духи "Киви"</a></li>
-                                        <li><a href="product.php">Женские духи "Рут"</a></li>
-                                        <li><a href="product.php">Губная помада</a></li>
+                                        <?php foreach ($menusideItem['submenuside'] as $submenusideItem): ?>
+                                        <li>
+                                            <a href="<?php echo $submenusideItem['url'];?>"><?php echo htmlspecialchars($submenusideItem['title']);?></a>
+                                        </li>
+                                        <?php endforeach; ?>
                                     </ul>
+                                    <?php endif; ?>
                                 </div>
-
                             </li>
-                            <li><a href="#">Кремы и лосьены</a></li>
-                            <li><a href="#">Парфюмерия</a></li>
-                            <li><a href="#">Витамины и бады</a></li>
-                            <li><a href="#">Чаи</a></li>
+                            <?php endforeach; ?>
                         </ul>
                     </div>
                 </nav>
@@ -52,174 +45,18 @@
                     <li><a href="#">Я рекомендую</a></li>
                 </ul>
                 <ul class="products-list clearfix">
-                    <li>
-                        <a href="product.html">
-                            <img src="images/product_item_big.jpg" alt="">
-
-                            <h3>Доктор Нонна на НТВ в
-                                программе "Наши со Львом
-                                Новоженовым"
-                            </h3>
-                        </a>
-                        <div class="buy clearfix">
-                            <span>280 грн.</span>
-                            <a href="#" class="btn-main">Купить</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="product.html">
-                            <img src="images/product_item_big.jpg" alt="">
-
-                            <h3>Доктор Нонна на НТВ в
-                                программе "Наши со Львом
-                                Новоженовым"
-                            </h3>
-                        </a>
-                        <div class="buy clearfix">
-                            <span>280 грн.</span>
-                            <a href="#" class="btn-main">Купить</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="product.html">
-                            <img src="images/product_item_big.jpg" alt="">
-
-                            <h3>Доктор Нонна на НТВ в
-                                программе "Наши со Львом
-                                Новоженовым"
-                            </h3>
-                        </a>
-                        <div class="buy clearfix">
-                            <span>280 грн.</span>
-                            <a href="#" class="btn-main">Купить</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="product.html">
-                            <img src="images/product_item_big.jpg" alt="">
-
-                            <h3>Доктор Нонна на НТВ в
-                                программе "Наши со Львом
-                                Новоженовым"
-                            </h3>
-                        </a>
-                        <div class="buy clearfix">
-                            <span>280 грн.</span>
-                            <a href="#" class="btn-main">Купить</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="product.html">
-                            <img src="images/product_item_big.jpg" alt="">
-
-                            <h3>Доктор Нонна на НТВ в
-                                программе "Наши со Львом
-                                Новоженовым"
-                            </h3>
-                        </a>
-                        <div class="buy clearfix">
-                            <span>280 грн.</span>
-                            <a href="#" class="btn-main">Купить</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="product.html">
-                            <img src="images/product_item_big.jpg" alt="">
-
-                            <h3>Доктор Нонна на НТВ в
-                                программе "Наши со Львом
-                                Новоженовым"
-                            </h3>
-                        </a>
-                        <div class="buy clearfix">
-                            <span>280 грн.</span>
-                            <a href="#" class="btn-main">Купить</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="product.html">
-                            <img src="images/product_item_big.jpg" alt="">
-
-                            <h3>Доктор Нонна на НТВ в
-                                программе "Наши со Львом
-                                Новоженовым"
-                            </h3>
-                        </a>
-                        <div class="buy clearfix">
-                            <span>280 грн.</span>
-                            <a href="#" class="btn-main">Купить</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="product.html">
-                            <img src="images/product_item_big.jpg" alt="">
-
-                            <h3>Доктор Нонна на НТВ в
-                                программе "Наши со Львом
-                                Новоженовым"
-                            </h3>
-                        </a>
-                        <div class="buy clearfix">
-                            <span>280 грн.</span>
-                            <a href="#" class="btn-main">Купить</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="product.html">
-                            <img src="images/product_item_big.jpg" alt="">
-
-                            <h3>Доктор Нонна на НТВ в
-                                программе "Наши со Львом
-                                Новоженовым"
-                            </h3>
-                        </a>
-                        <div class="buy clearfix">
-                            <span>280 грн.</span>
-                            <a href="#" class="btn-main">Купить</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="product.html">
-                            <img src="images/product_item_big.jpg" alt="">
-
-                            <h3>Доктор Нонна на НТВ в
-                                программе "Наши со Львом
-                                Новоженовым"
-                            </h3>
-                        </a>
-                        <div class="buy clearfix">
-                            <span>280 грн.</span>
-                            <a href="#" class="btn-main">Купить</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="product.html">
-                            <img src="images/product_item_big.jpg" alt="">
-
-                            <h3>Доктор Нонна на НТВ в
-                                программе "Наши со Львом
-                                Новоженовым"
-                            </h3>
-                        </a>
-                        <div class="buy clearfix">
-                            <span>280 грн.</span>
-                            <a href="#" class="btn-main">Купить</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="product.html">
-                            <img src="images/product_item_big.jpg" alt="">
-
-                            <h3>Доктор Нонна на НТВ в
-                                программе "Наши со Львом
-                                Новоженовым"
-                            </h3>
-                        </a>
-                        <div class="buy clearfix">
-                            <span>280 грн.</span>
-                            <a href="#" class="btn-main">Купить</a>
-                        </div>
-                    </li>
+                    <?php foreach ($config['product'] as $productItem): ?>
+                        <li>
+                            <a href="<?php echo $productItem['url']; ?>">
+                                <img src="<?php echo $productItem['image_path']; ?>" alt="">
+                            </a>
+                            <h3><?php echo htmlspecialchars($productItem['title']); ?></h3>
+                            <div class="buy clearfix">
+                                <span><?php echo htmlspecialchars($productItem['price']); ?></span>
+                                <a href="<?php echo $productItem['buy_url']; ?>" class="btn-main">Купить</a>
+                            </div>
+                        </li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
         </div>
@@ -229,47 +66,17 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
+                <h2>Вы смотрели</h2>
                 <ul class="products-list clearfix">
-                    <li>
-                        <a href="product.php">
-                            <img src="images/view_item_1.png" alt="">
-
-                            <h3>Шампунь ежедневного использования</h3>
-                            <span>280 грн.</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="product.php">
-                            <img src="images/view_item_1.png" alt="">
-
-                            <h3>Шампунь ежедневного использования</h3>
-                            <span>280 грн.</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="product.php">
-                            <img src="images/view_item_1.png" alt="">
-
-                            <h3>Шампунь ежедневного использования</h3>
-                            <span>280 грн.</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="product.php">
-                            <img src="images/view_item_1.png" alt="">
-
-                            <h3>Шампунь ежедневного использования</h3>
-                            <span>280 грн.</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="product.php">
-                            <img src="images/view_item_1.png" alt="">
-
-                            <h3>Шампунь ежедневного использования</h3>
-                            <span>280 грн.</span>
-                        </a>
-                    </li>
+                    <?php foreach ($config['like'] as $likeItem): ?>
+                        <li>
+                            <a href="<?php echo $likeItem['url']; ?>">
+                                <img src="<?php echo $likeItem['image_path']; ?>" alt="">
+                            </a>
+                            <h3><?php echo htmlspecialchars($likeItem['title']); ?></h3>
+                            <span><?php echo htmlspecialchars($likeItem['price']); ?></span>
+                        </li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
         </div>
